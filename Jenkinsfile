@@ -19,7 +19,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-env.PATH="/opt/chefdk/embedded/bin:${HOME}/.chefdk/gem/ruby/2.4.0/bin:$PATH"
+env.PATH="/opt/chefdk/embedded/bin:${env.HOME}/.chefdk/gem/ruby/2.4.0/bin:${env.PATH}"
 
 node {
 
