@@ -37,7 +37,7 @@ node {
          env.NODE_ENV = "test"
 
          print "Environment will be : ${env.NODE_ENV}"
-
+         sh 'chef gem install -g'
          sh 'kitchen test'
 
        }
