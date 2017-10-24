@@ -1,0 +1,18 @@
+---
+# tasks file for APACHE - WEBPAGE
+- name: install apache web server (httpd)
+  yum:
+    name: httpd
+    state: present
+
+- name: enable apache web server (httpd)
+  service:
+    name: httpd
+    state: started
+    enabled: yes
+
+- name: deploy sample web page to root
+  git:
+    repo: 'https://github.com/BlackrockDigital/startbootstrap-one-page-wonder.git'
+    dest: /var/www/html
+    update: yes

@@ -1,0 +1,6 @@
+---
+- name: Sample role run
+  hosts: localhost
+  become: True
+  roles:
+    - apache-webpage
