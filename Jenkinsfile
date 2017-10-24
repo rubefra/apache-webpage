@@ -19,7 +19,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-env.PATH="/opt/chefdk/embedded/bin:${env.HOME}/.chefdk/gem/ruby/2.4.0/bin:${env.PATH}"
 
 node {
 
@@ -38,8 +37,7 @@ node {
          env.NODE_ENV = "test"
 
          print "Environment will be : ${env.NODE_ENV}"
-         sh 'chef gem install -g'
-         sh 'kitchen test'
+         sh 'sudo kitchen test'
 
        }
 
