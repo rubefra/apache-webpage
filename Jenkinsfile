@@ -38,6 +38,7 @@ node {
 
          print "Environment will be : ${env.NODE_ENV}"
          sh 'sudo kitchen test'
+         sh 'sudo rm -rf .kitchen'
 
        }
 
